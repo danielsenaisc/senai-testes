@@ -1,0 +1,337 @@
+/* here you can put your own css to customize and override the theme */
+
+/***
+Rounded Portlets
+***/
+/*
+.portlet {
+	border-radius: 4px !important;
+}
+
+.portlet .portlet-title
+
+
+ {
+	border-radius: 4px 4px 0px 0px !important;
+}
+
+.portlet .portlet-body,
+.portlet .portlet-body .form-actions  {
+	border-radius: 0px 0px 4px 4px !important;
+}
+*/
+.page-header-fixed .page-container {
+	margin-top: 0px;
+}
+
+.dashboard-stat .details .number {
+	padding-top: 25px;
+	text-align: right;
+	font-size: 60px;
+	line-height: 36px;
+	letter-spacing: -1px;
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+
+.dashboard-stat.blue-madison .more {
+	color: white;
+	background-color: #4884b8;
+	font-size: 14px;
+	font-style:italic;
+	font-weight:bold;
+
+}
+.dashboard-stat.red-intense .more {
+	color: white;
+	background-color: ##E35B58;
+	font-size: 14px;
+	font-style:italic;
+	font-weight:bold;
+}
+.dashboard-stat.green-meadow .more {
+	color: white;
+	background-color: ##1bbc9b;
+	font-size: 14px;
+	font-style:italic;
+	font-weight:bold;
+}
+.dashboard-stat.yellow-gold .more {
+	color: white;
+	background-color: ##e87e04;
+	font-size: 14px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.portlet.box.red {
+	border: 1px solid #e07163;
+	border-top: 0;
+	clear:none;
+}
+
+.note h4{
+	font-size:30px;
+	font-weight:bold;
+}
+
+.dataTables_wrapper .dataTables_filter {
+	float: left;
+	text-align: left;
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	box-sizing: border-box;
+	display: inline-block;
+	min-width: 0.1em;
+	padding: 0.0em 0em;
+	margin-left: 2px;
+	text-align: center;
+	text-decoration: none !important;
+	cursor: pointer;
+	color: #333333 !important;
+	border: 1px solid transparent;
+}
+
+.dataTables_filter .form-control {
+	margin-left: 4px;
+	width: 360px !important
+}
+
+.search_box{
+	margin-bottom: 10px;
+}
+
+.table thead tr th{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table tbody tr td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.form-horizontal .form-group {
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.portlet.box.grey-cascade {
+	border: 0px;
+	border-top: 0;
+}
+
+.dataTables_scrollHeadInner{
+	height: 30px;
+}
+
+.tab-content>.active {
+	display: block;
+	margin-top: 10px;
+}
+
+.table-scrollable {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: auto;
+	border: 1px solid #dddddd;
+	margin: 10px 0 !important;
+}
+
+.modal {
+	margin : 0 auto;
+	overflow-y: hidden !important;
+}
+.modal-header h4{
+	color:#000000;
+	font-style: bold;
+	font-size: 20px;
+}
+.modal-body h5{
+	color:#000000;
+	font-style: normal;
+	font-size: 14px;
+}
+div#copy_models{
+	width: 900px;
+	height: 600px;
+}
+div#copy_models_dialog.modal-dialog{
+	width: 900px;
+}
+div#copy_models_content.modal-content{
+	width: 100%;
+}
+
+table#copy_models_table.table.table-bordered thead > tr > th {
+	border-bottom: 0;
+	color: #000000;
+	font-style: normal;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+}
+
+table#copy_models_table.table.table-bordered tbody > tr > td {
+	border-bottom: 0;
+	color: #000000;
+	font-style: normal;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size:13px;
+}
+
+.dataTables_scrollHeadInner {
+	width:100%;
+}
+
+#copy_models_table_wrapper > div > div:nth-child(2) > div > div.dataTables_scrollHead > div > table > thead > tr{
+	color: #000000;
+	font-style: normal;
+	font-family: "Open Sans", sans-serif;
+}
+
+select.input-sm {
+	height: 28px; 
+	line-height: 28px; 
+	vertical-align: middle;
+	padding-top: 10px;
+	margin: 0;
+	padding: auto 0;
+}
+
+.btn-file > input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	font-size: 23px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	transform: translate(-300px, 0) scale(4);
+	direction: ltr;
+	font-family: "Open Sans", sans-serif;
+
+}
+div.tagsinput {
+	min-height: 35px;
+	height: auto !important;
+	margin: 0;
+	padding: 5px 5px 0px 5px;
+	overflow: auto;
+}
+
+div.tagsinput span.tag {
+	background: #aaaaaa;
+	color: white;
+	border: 0;
+	padding: 3px 6px;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+div.tagsinput span.tag a {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.form-horizontal .form-group {
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+.fileinput .btn {
+	vertical-align: middle;
+	margin-left: 0px;
+	width: 200px;
+}
+
+#channels_table > tbody > tr> td > div > input{
+	margin-left: 30px;
+}
+
+.form .form-actions.right {
+	padding-left: 0 !important;
+	padding-right: 10px !important;
+	text-align: right !important;
+}
+
+.fileinput .btn {
+	vertical-align: middle;
+	margin-left: 0px;
+	width: 200px;
+	height: 30px;
+}
+.page-sidebar.navbar-collapse {
+	max-height: none !important;
+	width: 170px;
+	padding-right: 10px;
+}
+.page-content-wrapper .page-content {
+	margin-left: 150px;
+	margin-top: 0px;
+	min-height: 600px;
+	padding: 25px 20px 10px 20px;
+}
+
+.panel-primary {
+	border-color: #3595bd;
+	height: 100px;
+}
+
+.portlet.box.blue-madison {
+	border: 0px;
+	border-top: 0;
+}
+
+.fa-info-circle{
+	font-size: 18px;
+	padding: 5px;
+	color:white;
+}
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.popover .popover-title {
+	border-radius: 0 !important;
+	margin: 0 !important;
+	color:black;
+}
+
+.popover .popover-content {
+	color:black;
+}
+
+.glyphicon-remove{
+	color:red;
+}
+
+#collection_tags_tagsinput{
+	width: 480px !important;
+}
+
+.blue.btn .badge {
+	color: #4b8df8;
+	background-color: white;
+	margin-left: 40px;
+}
+
+.btn .badge {
+	position: absolute;
+	top: -1px;
+}
+
+
+
+
