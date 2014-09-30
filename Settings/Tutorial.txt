@@ -1,0 +1,40 @@
+Instalar vagrant
+Instalar Ruby -- marcando o path e a leitura de arquivos .rb e .rbw
+Reiniciar computador
+
+Abrir promp navegar até a pasta desejada
+Dentro desta pasta devem estar os seguintes arquivos:
+- apache-tomcat-7.0.55.tar
+- oracle-xe-11.2.0-1.0.x86_64.rpm
+- vagrant-proxyconf-1.3.2.gem
+- bootstrap.sh
+
+vagrant init nrel/CentOS-6.5-x86_64
+vagrant box add nrel/CentOS-6.5-x86_64
+vagrant plugin install vagrant-proxyconf-1.3.2.gem
+trocar o arquivo Vagrantfile criado automáticamente na pasta pelo compartilhado
+vagrant up
+.....
+logar no putty 127.0.0.1:2222
+user vagrant
+password vagrant
+
+sudo su
+cd /
+unzip /vagrant/oracle-xe-11.2.0-1.0.x86_64.rpm.zip
+rpm -ivh /Disk1/oracle-xe-11.2.0-1.0.x86_64.rpm
+/etc/init.d/oracle-xe configure
+. ./u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh
+echo . /u01/app/oracle/product/11.2.0/xe/bin/oracle_env.sh >> /etc/bashrc
+sqlplus /nolog
+connect sys/2Senai2014 as sysdba
+EXEC DBMS_XDB.SETLISTENERLOCALACCESS(FALSE);
+
+======acesso pelo browser=============
+http://localhost:5050/apex/f?p=4950:1
+
+======Oracle listener config==========
+provavelmente o arquivo listeners.ora vai estar com um parênteses a menos
+/u01/app/oracle/product/11.2.0/xe/network/admin
+lsnrctl start
+/etc/init.d/oracle-xe  restart
