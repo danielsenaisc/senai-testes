@@ -392,10 +392,10 @@ public class Marca implements Serializable {
     public String isActive() {
         //retorno default para marcasVazias;
         if (getId() == null) {
-            return RadioOptions.CHECKED.getOption();
+            return "checked";
         }
         if (getStatus().equals(OracleBoolean.TRUE.getValue())) {
-            RadioOptions.CHECKED.getOption();
+        	return "checked";
         }
         return RadioOptions.UNCHECkED.getOption();
     }
