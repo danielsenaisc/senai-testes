@@ -1,0 +1,24 @@
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.box = "nrel/CentOS-6.5-x86_64"
+
+  config.proxy.http     = "http://mateus.barragana:QPWOeiru@10.6.63.253:3128/"
+  config.proxy.https    = "http://mateus.barragana:QPWOeiru@10.6.63.253:3128/"
+  config.proxy.no_proxy = "localhost,127.0.0.1,.example.com, localhost:4040, 127.0.0.1:4040"
+  config.yum_proxy.http  = "http://mateus.barragana:QPWOeiru@10.6.63.253:3128/"
+
+
+  config.vm.network :forwarded_port, guest: 8080, host: 4040
+  config.vm.network :forwarded_port, guest: 5050, host: 5050
+  config.vm.network :forwarded_port, guest: 1521, host: 1521
+  config.vm.network :forwarded_port, guest: 6060, host: 6060
+
+  config.vm.provision :shell, path: "bootstrap.sh"
+
+  #config.vm.provision :shell, run: "always", inline: "sudo ./apache-tomcat-7.0.54/bin/startup.sh"
+
+  config.vm.synced_folder "webapps", "/home/vagrant/apache-tomcat-7.0.54/webapps", create: true
+
+end
